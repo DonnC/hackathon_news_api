@@ -1,0 +1,1 @@
+web: gunicorn scrape_app:app
