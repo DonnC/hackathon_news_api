@@ -25,7 +25,8 @@ def getPosts(url=BASE_URL):
 
    webpage = resp
    page = webpage.content
-   soup = bs(page, 'html5lib')
+   #soup = bs(page, 'html5lib')
+   soup = bs(page)
    posts = soup.find_all('ul', class_='posts-items')
 
    covid_posts = posts[0]
